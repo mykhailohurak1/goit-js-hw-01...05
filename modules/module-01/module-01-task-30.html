@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 30/36</h2>
+
+    <h3>ДОВЖИНА РЯДКА</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Для того щоб дізнатися довжину рядка, тобто кількість її символів, у рядків є вбудована властивість <code>length</code>, значення
+        якої можна отримати, звернувшись до неї через крапку після імені змінної або рядкового літерала.
+    </p>
+    <code class="code">
+        const productName = "Repair droid";
+        
+        // Якщо у змінній зберігається рядок
+        console.log(productName.length); // 12
+        
+        // Якщо рядковий літерал
+        console.log("Repair droid".length); // 12
+    </code>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>getNameLength(name)</code> приймає ім'я (параметр name) і повертає рядок, в якому вказана його довжина. Доповни
+        шаблонний рядок у змінній <code>message</code> довжиною рядка з параметра <code>name</code>.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>getNameLength(name)</code></li>
+        <li>Виклик функції <code>getNameLength("Poly")</code> повертає <code>"Name Poly is 4 characters long"</code></li>
+        <li>Виклик функції <code>getNameLength("Harambe")</code> повертає <code>"Name Harambe is 6 characters long"</code></li>
+        <li>Виклик функції <code>getNameLength("Billy")</code> повертає <code>"Name Billy is 5 characters long"</code></li>
+        <li>Виклик функції <code>getNameLength("Joe")</code> повертає <code>"Name Joe is 3 characters long"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-30.js"></script>
+</body>

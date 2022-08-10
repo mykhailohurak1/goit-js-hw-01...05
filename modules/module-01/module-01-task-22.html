@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 22/36</h2>
+
+    <h3>ЛОГІЧНЕ «АБО» (ОПЕРАТОР <code>||</code>)</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Оператор <code>||</code> приводить всі операнди до буля і повертає значення одного з них. Лівий операнд, якщо його можна привести до
+        <code>true</code>, і правий - в інших випадках.
+    </p>
+    <code class="code">
+        вираз || вираз
+    </code>
+    <p>
+        У наступному прикладі умова зліва поверне <code>true</code>, тому результатом всього виразу буде <code>true</code> - повернеться значення першого
+        операнда, яке було приведене до <code>true</code>.
+    </p>
+    <code class="code">
+        const age = 5;
+        console.log(age < 10 || age> 30); // true || false -> true
+    </code>
+    <p>
+        Тут результатом теж буде <code>true</code>, оскільки хоча б один з операндів, у цьому випадку правий, був приведений до <code>true</code>.
+    </p>
+    <code class="code">
+        const age = 40;
+        console.log(age < 10 || age> 30); // false || true -> true
+    </code>
+    <p>
+        А тут жодна з умов не виконується, тому отримуємо <code>false</code> - значення останнього операнда.
+    </p>
+    <code class="code">
+        const age = 20;
+        console.log(age < 10 || age> 30); // false || false -> false
+    </code>
+    <p>
+        Тобто логічне «АБО» запинається на істині і повертає те, на чому запнулося або останній операнд.
+    </p>
+    <code class="code">
+        console.log(true || false); // true
+        console.log(false || true); // true
+        console.log(true || true); // true
+        
+        console.log(3 || false); // 3
+        console.log(false || 3); // 3
+        console.log(3 || true); // 3
+        console.log(true || 3); // true
+    </code>   
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>checkIfCanAccessContent(subType)</code> перевіряє, чи може користувач отримати доступ до контенту. Перевірка
+        відбувається за типом передплати. Отримати доступ можуть тільки користувачі з передплатою <code>pro</code> або <code>vip</code>.
+    </p>
+    <p>
+        Присвой змінній <code>canAccessContent</code> вираз перевірки передплати. Якщо значення параметра <code>subType</code> дорівнює рядкам <code>"pro"</code> або
+        <code>"vip"</code>, користувач отримає доступ. Результатом виразу перевірки буде буль <code>true</code> або <code>false</code>.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkIfCanAccessContent(subType)</code></li>
+        <li>У виразі перевірки використаний оператор <code>||</code></li>
+        <li>Виклик <code>checkIfCanAccessContent("pro")</code> повертає <code>true</code></li>
+        <li>Виклик <code>checkIfCanAccessContent("starter")</code> повертає <code>false</code></li>
+        <li>Виклик <code>checkIfCanAccessContent("vip")</code> повертає <code>true</code></li>
+        <li>Виклик <code>checkIfCanAccessContent("free")</code> повертає <code>false</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-22.js"></script>
+</body>

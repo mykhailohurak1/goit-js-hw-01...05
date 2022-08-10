@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 19/36</h2>
+
+    <h3>БЛОК <code>ELSE...IF</code></h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>Конструкція <code>if...else</code> може перевірити і зреагувати на виконання або невиконання тільки однієї умови.</p>
+    <code class="code">
+        let cost;
+        const subscription = "pro";
+        
+        if (subscription === "pro") {
+        cost = 100;
+        } else {
+        cost = 0;
+        }
+        
+        console.log(cost); // 100
+    </code>
+    <p>Блок <code>else...if</code> дозволяє додати після <code>else</code> ще один оператор <code>if</code> з умовою. В кінці ланцюжка може бути класичний блок <code>else</code>,
+    який виконається тільки у разі, коли жодна з умов не приведеться до <code>true</code>.</p>
+    <code class="code">
+        let cost;
+        const subscription = "premium";
+        
+        if (subscription === "free") {
+        cost = 0;
+        } else if (subscription === "pro") {
+        cost = 100;
+        } else if (subscription === "premium") {
+        cost = 500;
+        } else {
+        console.log(`Invalid subscription type - ${subscription}`);
+        }
+        
+        console.log(cost); // 500
+    </code>
+    <p>За першої ж задовільної умови перевірки припиняться і виконається тільки тіло відповідного блоку <code>if</code>. Тому подібний запис
+    потрібно читати як: «шукаю перше виконання умови, ігнорую все інше».</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>Функція <code>checkPassword(password)</code> отримує пароль користувача в параметр <code>password</code>, перевіряє його на збіг з паролем
+    адміністратора у змінній <code>ADMIN_PASSWORD</code> і повертає повідомлення про результат порівняння, яке зберігається у змінній
+    <code>message</code>.</p>
+    <ul>
+        <li>Якщо значення параметра <code>password</code> дорівнює <code>null</code>, значить користувач скасував операцію і в <code>message</code> записується рядок
+        <code>"Canceled by user!"</code>.</li>
+        <li>Якщо значення параметра <code>password</code> збігається зі значенням <code>ADMIN_PASSWORD</code>, у змінну <code>message</code> присвоюється рядок <code>"Welcome!"</code>.</li>
+        <li>Якщо жодна з попередніх умов не виконалася, у змінну <code>message</code> записується рядок <code>"Access denied, wrong password!"</code>.</li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkPassword(password)</code></li>
+        <li>Виклик <code>checkPassword("mangohackzor")</code> повертає <code>"Access denied, wrong password!"</code></li>
+        <li>Виклик <code>checkPassword(null)</code> повертає <code>"Canceled by user!"</code></li>
+        <li>Виклик <code>checkPassword("polyhax")</code> повертає <code>"Access denied, wrong password!"</code></li>
+        <li>Виклик <code>checkPassword("jqueryismyjam")</code> повертає <code>"Welcome!"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-19.js"></script>
+</body>

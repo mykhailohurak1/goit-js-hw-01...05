@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 25/36</h2>
+
+    <h3>ТЕРНАРНИЙ ОПЕРАТОР</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Тернарний оператор використовується як синтаксично коротша заміна інструкції <code>if...else</code>, коли одній і тій самій змінній
+        необхідно присвоїти різні значення за умовою.
+    </p>
+    <code class="code">
+        <умова> ? <вираз, якщо умова істинна> : <вираз, якщо умова хибна>
+    </code>
+    <p>
+        Працює за такою схемою:
+    </p>
+    <ul>
+        <li>Обчислюється <code>умова</code>.</li>
+        <li>Якщо умова істинна, тобто приводиться до <code>true</code>, обчислюється вираз після <code>?</code>.</li>
+        <li>Якщо умова хибна, тобто приводиться до <code>false</code>, обчислюється вираз після <code>:</code>.</li>
+        <li>Значення обчисленого виразу повертається як результат роботи тернарного оператора.</li>
+    </ul>
+    <code class="code">
+        let type;
+        const age = 20;
+        
+        if (age >= 18) {
+        type = "adult";
+        } else {
+        type = "child";
+        }
+        
+        console.log(type); // "adult"
+    </code>
+    <p>
+        Виконаємо рефакторинг, замінивши <code>if...else</code> тернарним оператором.
+    </p>
+    <code class="code">
+        const age = 20;
+        const type = age >= 18 ? "adult" : "child";
+        console.log(type); // "adult"
+    </code>
+    <div class="attention">
+        <h5>Увага</h5>
+        <p>
+            Тернарний оператор повинен використовуватися у простих операціях присвоєння або повернення. Застосовувати його для
+            заміни складних розгалужень - погана практика (антипатерн).
+        </p>
+    </div>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Виконай рефакторинг рішення задачі «Склад товарів», замінивши інструкцію <code>if...else</code> тернарним оператором.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkStorage(available, ordered)</code>.</li>
+        <li>Використаний тернарний оператор.</li>
+        <li>Виклик <code>checkStorage(100, 50)</code> повертає <code>"The order is accepted, our manager will contact you"</code></li>
+        <li>Виклик <code>checkStorage(100, 130)</code> повертає <code>"Not enough goods in stock!"</code></li>
+        <li>Виклик <code>checkStorage(200, 20)</code> повертає <code>"The order is accepted, our manager will contact you"</code></li>
+        <li>Виклик <code>checkStorage(200, 150)</code> повертає <code>"The order is accepted, our manager will contact you"</code></li>
+        <li>Виклик <code>checkStorage(150, 180)</code> повертає <code>"Not enough goods in stock!"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-25.js"></script>
+</body>

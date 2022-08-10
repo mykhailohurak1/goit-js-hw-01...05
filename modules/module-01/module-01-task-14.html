@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 14/36</h2>
+
+    <h3>ОПЕРАТОРИ ПОРІВНЯННЯ <code>===</code> І <code>!==</code></h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        «Нестрогі» оператори <code>==</code> і <code>!=</code> виконують перетворення типів значень, що порівнюються, що може призвести до помилок,
+        особливо у початківців.
+    </p>
+    <code class="code">
+        // ❌ Погано, виконується приведення типів
+        console.log(5 == "5"); // true
+        console.log(5 != "5"); // false
+        console.log(1 == true); // true
+        console.log(1 != true); // false
+    </code>
+    <p>
+        Тому для перевірки рівності або нерівності двох значень використовуються оператори <code>===</code> (строга рівність) і <code>!==</code> (строга
+        нерівність), які не виконують приведення типів операндів.
+    </p>
+    <code class="code">
+        // ✅ Добре, приведення типів не виконується
+        console.log(5 === "5"); // false
+        console.log(5 === 5); // true
+        console.log(5 !== "5"); // true
+        console.log(5 !== 5); // false
+        console.log(1 === true); // false
+        console.log(1 !== true); // true
+    </code>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>isValidPassword (password)</code> перевіряє рівність збереженого і введеного паролів і повертає результат перевірки -
+        буль <code>true</code> або <code>false</code>. Змінна <code>SAVED_PASSWORD</code> зберігає значення попередньо збереженого пароля. Введений пароль передається
+        у параметр <code>password</code>.
+    </p>
+    <p>
+        Присвой змінній <code>isMatch</code> вираз перевірки рівності введених і попередньо збережених паролів. Результатом виразу перевірки
+        повинно бути <code>true</code>, якщо значення збігаються, і <code>false</code> - якщо ні.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>isValidPassword(password)</code></li>
+        <li>У виразі перевірки паролів використаний оператор <code>===</code></li>
+        <li>Виклик <code>isValidPassword("mangodab3st")</code> повертає <code>false</code></li>
+        <li>Виклик <code>isValidPassword("kiwirul3z")</code> повертає <code>false</code></li>
+        <li>Виклик <code>isValidPassword("jqueryismyjam")</code> повертає <code>true</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-14.js"></script>
+</body>

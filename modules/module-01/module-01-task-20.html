@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 20/36</h2>
+
+    <h3>ЗАДАЧА: СКЛАД ТОВАРІВ 2.0</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>Функція <code>checkStorage(available, ordered)</code> перевіряє можливість оформлення замовлення і повертає повідомлення про
+    результат. Вона оголошує два параметри, значення яких будуть задаватися під час її виклику.</p>
+    <ul>
+        <li><code>available</code> - доступна кількість товарів на складі</li>
+        <li><code>ordered</code> - одиниць товару в замовленні</li>
+    </ul>
+    <p>Використовуючи розгалуження, доповни код функції таким чином, що:</p>
+    <ul>
+        <li>Якщо в замовленні ще немає товарів, тобто значення параметра <code>ordered</code> дорівнює <code>0</code>, у змінну <code>message</code> присвоюється рядок
+        <code>"There are no products in the order!"</code>.</li>
+        <li>Якщо товарів у замовленні більше, ніж доступно товарів на складі, то у змінну <code>message</code> присвоюється рядок <code>"Your order is
+        too large, there are not enough items in stock!"</code>.</li>
+        <li>В іншому випадку у змінну <code>message</code> присвоюється рядок <code>"The order is accepted, our manager will contact you"</code>.</li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkStorage(available, ordered)</code></li>
+        <li>Виклик <code>checkStorage(100, 50)</code> повертає <code>"The order is accepted, our manager will contact you"</code></li>
+        <li>Виклик <code>checkStorage(100, 130)</code> повертає <code>"Your order is too large, there are not enough items in stock!"</code></li>
+        <li>Виклик <code>checkStorage(70, 0)</code> повертає <code>"There are no products in the order!"</code></li>
+        <li>Виклик <code>checkStorage(200, 20)</code> повертає <code>"The order is accepted, our manager will contact you"</code></li>
+        <li>Виклик <code>checkStorage(200, 250)</code> повертає <code>"Your order is too large, there are not enough items in stock!"</code></li>
+        <li>Виклик <code>checkStorage(150, 0)</code> повертає <code>"There are no products in the order!"</code></li>
+    </ul>
+    
+    <script type="module" src="../js/module-01-task-20.js"></script>
+</body>

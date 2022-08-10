@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 29/36</h2>
+
+    <h3>ЗАДАЧА: ДОСТАВКА ТОВАРУ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>getShippingCost(country)</code> повинна перевіряти можливість доставки товару в країну користувача (параметр <code>country</code>) і
+        повертати повідомлення про результат, що зберігається у змінній <code>message</code>. Обов'язково використовуй інструкцію <code>switch</code>.
+    </p>
+    <p>
+        Формат рядка, що повертається <code>"Shipping to < country > will cost < price > credits"</code>, де замість <code>< country ></code> і <code>< price ></code>,
+        необхідно підставити відповідні значення.
+    </p>
+    <p>
+        Список країн і вартість доставки:
+    </p>
+    <ul>
+        <li><code>China</code> - <code>100</code> кредитів</li>
+        <li><code>Chile</code> - <code>250</code>250 кредитів</li>
+        <li><code>Australia</code> - <code>170</code> кредитів</li>
+        <li><code>Jamaica</code> - <code>120</code> кредитів</li>
+    </ul>
+    <p>
+        Зі списку видно, що доставка можлива не скрізь. Якщо зазначена країна відсутня у списку, то функція повинна повернути
+        рядок <code>"Sorry, there is no delivery to your country"</code>
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>getShippingCost(country)</code></li>
+        <li>В тілі функції використана інструкція <code>switch</code></li>
+        <li>Виклик <code>getShippingCost("Australia")</code> повертає <code>"Shipping to Australia will cost 170 credits"</code></li>
+        <li>Виклик <code>getShippingCost("Germany")</code> повертає <code>"Sorry, there is no delivery to your country"</code></li>
+        <li>Виклик <code>getShippingCost("China")</code> повертає <code>"Shipping to China will cost 100 credits"</code></li>
+        <li>Виклик <code>getShippingCost("Chile")</code> повертає <code>"Shipping to Chile will cost 250 credits"</code></li>
+        <li>Виклик <code>getShippingCost("Jamaica")</code> повертає <code>"Shipping to Jamaica will cost 120 credits"</code></li>
+        <li>Виклик <code>getShippingCost("Sweden")</code> повертає <code>"Sorry, there is no delivery to your country"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-29.js"></script>
+</body>

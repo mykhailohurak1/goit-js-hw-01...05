@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 27/36</h2>
+
+    <h3>ІНСТРУКЦІЯ <code>SWITCH</code></h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        У деяких випадках незручність читання складних розгалужень <code>if...else</code> можна уникнути, використовуючи «плоскіший»
+        синтаксис інструкції розгалуження <code>switch</code>.
+    </p>
+    <p>
+        Сфера застосування <code>switch</code> обмежена задачами з одним загальним питанням (що порівнювати) і безліччю варіантів відповідей
+        (з чим порівнювати).
+    </p>
+    <code class="code">
+        switch (значення) {
+        case значення:
+        інструкції;
+        break;
+        
+        case значення:
+        інструкції;
+        break;
+        }
+    </code>
+    <p>
+        Його синтаксис складається з блоку <code>switch(значення)</code> - що потрібно порівняти та безлічі окремих випадків <code>case значення:</code> -
+        з чим потрібно порівняти. Для порівняння використовується оператор строгої рівності <code>===</code>. Тобто не можна порівняти на
+        більше або менше, тільки на рівність.
+    </p>
+    <p>
+        Значення в блоці <code>switch(значення)</code> - рядок або число, яке порівнюється на строгу рівність з усіма значеннями в блоках
+        <code>case значення:</code> по черзі, зверху вниз.
+    </p>
+    <p>
+        Оператор <code>break</code> в кінці кожного блоку <code>case</code> необхідний, щоб перервати подальші перевірки та одразу перейти до коду після
+        <code>switch</code> у тому разі, коли перевірка на рівність повернула <code>true</code>.
+    </p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>getSubscriptionPrice(type)</code> отримує рядок з типом передплати користувача (параметр <code>type</code>), перевіряє її на збіг з
+        трьома можливими типами щомісячної передплати та повертає ціну, що зберігається у змінній <code>price</code>.
+    </p>
+    <p>
+        Якщо значення параметра <code>type</code> - це рядок:
+    </p>
+    <ul>
+        <li><code>"starter"</code> - ціна передплати <code>0</code> кредитів.</li>
+        <li><code>"professional"</code> - ціна передплати <code>20</code> кредитів.</li>
+        <li><code>"organization"</code> - ціна передплати <code>50</code> кредитів.</li>
+    </ul>
+    <p>
+        Спочатку в тілі функції була інструкція <code>if...else</code>, яка виглядала ось так.
+    </p>
+    <code class="code">
+        if (type === "starter") {
+        price = 0;
+        } else if (type === "professional") {
+        price = 20;
+        } else if (type === "organization") {
+        price = 50;
+        }
+    </code>
+    <p>
+        Після рефакторингу інструкція <code>if..else</code> була замінена на <code>switch</code>. Доповни код інструкції <code>switch</code>, щоб функція працювала
+        правильно.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>getSubscriptionPrice(type)</code></li>
+        <li>Виклик <code>getSubscriptionPrice("professional")</code> повертає число <code>20</code></li>
+        <li>Виклик <code>getSubscriptionPrice("organization")</code> повертає число <code>50</code></li>
+        <li>Виклик <code>getSubscriptionPrice("starter")</code> повертає число <code>0</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-27.js"></script>
+</body>

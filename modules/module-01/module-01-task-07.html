@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 07/36</h2>
+
+    <h3>ОГОЛОШЕННЯ І ВИКЛИК ФУНКЦІЇ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+        <p>
+            Функція - це підпрограма, незалежна частина коду, призначена для багаторазового виконання конкретної задачі з
+            різними початковими значеннями.
+        </p>
+        <p>
+            Функцію можна уявити як чорний ящик — вона отримує щось на вході (дані), і повертає щось на виході (результат
+            виконання коду всередині неї).
+        </p>
+        <code class="code">
+            // 1. Оголошення функції multiply
+            function multiply() {
+                // Тіло функції
+                console.log("multiply function invocation");
+            }
+
+            // 2. Виклики функції multiply
+            multiply(); // multiply function invocation
+            multiply(); // multiply function invocation
+            multiply(); // multiply function invocation
+        </code>
+        <p>
+            Оголошення функції починається з ключового слова <code>function</code>, за яким йде її ім'я — дієслово, що відповідає на питання «Що
+            зробити?» і пара круглих дужок. Тіло функції береться у фігурні дужки <code>{}</code> і містить інструкції, які необхідно виконати
+            під час її виклику. Потім, коли необхідно, функція викликається за допомогою імені та пари круглих дужок.
+        </p>
+
+
+    <h4>ЗАВДАННЯ</h4>
+        <p>
+            Оголоси функцію <code>sayHi</code>, всередині якої додай <code>console.log()</code> з рядком <code>"Hello, this is my first function!"</code>. Після оголошення
+            виклич функцію <code>sayHi</code>.
+        </p>
+
+    <h4>ТЕСТИ</h4>
+        <ul>
+            <li>Очікується оголошення функції</li>
+            <li>Функції присвоєно ім'я <code>sayHi</code></li>
+            <li>В тілі функції <code>sayHi</code> є <code>console.log("Hello, this is my first function!")</code></li>
+            <li>Після оголошення є виклик функції <code>sayHi</code></li>
+        </ul>
+
+    <script type="module" src="../js/module-01-task-07.js"></script>
+</body>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 02/36</h2>
+
+    <h3>ПЕРЕВИЗНАЧЕННЯ ЗНАЧЕННЯ ЗМІННОЇ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>Для того щоб оголосити змінну, якій у майбутньому можна буде присвоїти нове значення, використовується ключове слово <code>let</code>.</p>
+    <p>Створення змінної без ключового слова <code>let</code> або <code>const</code> призведе до помилки.</p>
+    <code class="code">
+        let age = 5;
+        age = 10;
+        
+        let username = "Mango";
+        username = "Poly";
+    </code>
+    <p>Спроба звернутися до змінної за ім'ям до її оголошення, викличе помилку.</p>
+    <p>Наприклад, не можна намагатися прочитати або змінити значення змінної до її оголошення:</p>
+    <code class="code">
+        // ❌ Неправильно, буде помилка
+        age = 15; // ReferenceError: Cannot access 'age' before initialization
+        console.log(age); // ReferenceError: age is not defined
+        
+        // Оголошення змінної age
+        let age = 20;
+        
+        // ✅ Правильно, звертаємося після оголошення
+        age = 25;
+        console.log(age); // 25
+    </code>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>Ім'я товару змінили на "Repair droid" і збільшили його ціну на 1500 кредитів.</p>
+    <p>Перевизнач значення змінних pricePerItem і productName після їх оголошення.</p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Змінна <code>pricePerItem</code> оголошена за допомогою <code>let</code></li>
+        <li>При оголошенні змінної <code>pricePerItem</code> присвоєно значення — число <code>2000</code></li>
+        <li>Змінній <code>pricePerItem</code> присвоєно нове значення, більше за попереднє на <code>1500</code></li>
+        <li>Змінна <code>productName</code> оголошена за допомогою <code>let</code></li>
+        <li>При оголошенні змінної <code>productName</code> присвоєно значення — рядок <code>"Droid"</code></li>
+        <li>Змінній <code>productName</code> присвоєно нове значення — рядок <code>"Repair droid"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-02.js"></script>
+</body>

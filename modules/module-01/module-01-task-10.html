@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 10/36</h2>
+
+    <h3>ЗАДАЧА: ШАБЛОННІ РЯДКИ 2.0</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>makeMessage(name, price)</code> складає і повертає повідомлення про покупку. Вона оголошує два параметри, значення яких
+        будуть задаватися під час її виклику.
+    </p>
+    <ul>
+        <li><code>name</code> - назва товару</li>
+        <li><code>price</code> - ціна товару</li>
+    </ul>
+    <p>
+        Доповни код функції таким чином, щоб у змінну message записувався рядок <code>"You picked <product name>, price per item is
+            <product price> credits"</code>, де <code><product name></product></code> і <code><product price></product></code> - це значення параметрів <code>name</code> і <code>price</code>. Використовуй
+        синтаксис шаблонних рядків.
+    </p>
+    <div class="attention">
+        <h5>Увага</h5>
+        <p>
+            Зверни увагу на те, що в коді відсутній виклик функції <code>makeMessage</code>. З цього завдання і далі ми самі
+            будемо викликати
+            твої функції і перевіряти те, як вони працюють. Результат наших перевірок ти побачиш у блоці <code>Результати</code>
+            під редактором
+            коду.
+        </p>
+    </div>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>makeMessage(name, price)</code></li>
+        <li>Виклик <code>makeMessage('Radar', 6150)</code> повертає <code>"You picked Radar, price per item is 6150 credits"</code></li>
+        <li>Виклик <code>makeMessage('Scanner', 3500)</code> повертає <code>"You picked Scanner, price per item is 3500 credits"</code></li>
+        <li>Виклик <code>makeMessage('Reactor', 8000)</code> повертає <code>"You picked Reactor, price per item is 8000 credits"</code></li>
+        <li>Виклик <code>makeMessage('Engine', 4070)</code> повертає <code>"You picked Engine, price per item is 4070 credits"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-10.js"></script>
+</body>

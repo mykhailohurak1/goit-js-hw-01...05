@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 36/36</h2>
+
+    <h3>ЗАДАЧА: ПЕРЕВІРКА СПАМУ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>checkForSpam(message)</code> приймає рядок (параметр <code>message</code>), 
+        перевіряє його на вміст заборонених слів <code>spam</code> і <code>sale</code>, і повертає результат перевірки. 
+        Слова в рядку параметра <code>message</code> можуть бути у довільному регістрі, наприклад <code>SPAM</code> або <code>sAlE</code>.
+    </p>
+    <ul>
+        <li>Якщо знайшли заборонене слово (<code>spam</code> або <code>sale</code>) то функція повертає буль <code>true</code>.</li>
+        <li>Якщо в рядку відсутні заборонені слова, функція повертає буль <code>false</code>.</li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkForSpam(message)</code>.</li>
+        <li>Виклик функції <code>checkForSpam("Latest technology news")</code> повертає <code>false</code></li>
+        <li>Виклик функції <code>checkForSpam("JavaScript weekly newsletter")</code> повертає <code>false</code></li>
+        <li>Виклик функції <code>checkForSpam("Get best sale offers now!")</code> повертає <code>true</code></li>
+        <li>Виклик функції <code>checkForSpam("Amazing SalE, only tonight!")</code> повертає <code>true</code></li>
+        <li>Виклик функції <code>checkForSpam("Trust me, this is not a spam message")</code> повертає <code>true</code></li>
+        <li>Виклик функції <code>checkForSpam("Get rid of sPaM emails. Our book in on sale!")</code> повертає <code>true</code></li>
+        <li>Виклик функції <code>checkForSpam("[SPAM] How to earn fast money?")</code> повертає <code>true</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-36.js"></script>
+</body>

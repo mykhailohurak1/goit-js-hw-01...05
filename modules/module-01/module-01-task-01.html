@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+    
+    <h2>Модуль 1 - Завдання 01/36</h2>
+
+    <h3>ОГОЛОШЕННЯ ЗМІННИХ</h3>
+    
+    <h4>ТЕОРІЯ</h4>
+    <p>Змінні використовуються для зберігання даних.</p>
+    <p>У кожної змінної є ідентифікатор (назва змінної).</p>
+    <p>Значення кожної змінної зберігається в оперативній пам'яті.</p>
+    <p>Змінну можна уявити як коробку з написом (ім'я змінної), в якій щось знаходиться (значення змінної).</p>
+    <pre>
+        <code class="code">
+            <ключове слово> <назва змінної> = <значення>
+        </code>
+    </pre>
+    <p>Оголошення змінної починається з ключового слова const.</p>
+    <p>Така змінна має бути одразу ініціалізована початковим значенням, і такій змінній не можна надати інше значення після її ініціалізації.</p>
+    <p>Увага!!! Створення змінної без ключового слова <code>const</code> призведе до помилки.</p>
+    <pre>
+        <code class="code">
+            const age = 20;
+            const age = 20;
+            const userName = "Mango";
+            const socialProfileTag = "@gluck";
+            const totalWorkerSalary = 4052;
+        </code>
+    </pre>
+    <p>В <code>JavaScript</code> назва змінної записується в <code>camelCase</code>-нотації. Перше слово пишеться маленькими буквами, а кожне наступне
+    починається з великої. Назви змінних чутливі до регістру, тобто <code>user</code>, <code>usEr</code> і <code>User</code> - це різні змінні.</p>
+
+    
+    
+    <h4>ЗАВДАННЯ</h4>
+    <p>Оголоси дві змінні, <code>productName</code> для назви товару, і <code>pricePerItem</code> для зберігання ціни за штуку.</p>
+    <p>При оголошенні надай змінним наступні значення:</p>
+    <ul>
+        <li>назва - рядок <code>"Droid"</code>;</li>
+        <li>ціна за штуку - число <code>2000</code></li>
+    </ul>
+    
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена змінна <code>productName</code></li>
+        <li>Значення змінної <code>productName</code> - це рядок <code>"Droid"</code></li>
+        <li>Оголошена змінна <code>pricePerItem</code></li>
+        <li>Значення змінної <code>pricePerItem</code> - це число <code>2000</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-01.js"></script>
+</body>

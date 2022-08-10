@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 18/36</h2>
+
+    <h3>ЗАДАЧА: ПЕРЕВІРКА БАЛАНСУ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>Станція з продажу ремонтних дроїдів готова до запуску, залишилося написати програмне забезпечення для відділу продажів.</p>
+    <p>Функція <code>makeTransaction(pricePerDroid, orderedQuantity, customerCredits)</code> виконує транзакцію з продажу дроїдів і повертає
+    повідомлення про результат операції. Вона оголошує три параметри, значення яких будуть задаватися під час її виклику:</p>
+    <ul>
+        <li><code>pricePerDroid</code> - ціна одного дроїда</li>
+        <li><code>orderedQuantity</code> - кіл-сть замовлених дроїдів</li>
+        <li><code>customerCredits</code> - сума коштів на рахунку клієнта</li>
+    </ul>
+    <p>Доповни її наступним функціоналом:
+</p>
+    <ul>
+        <li>Оголоси змінну <code>totalPrice</code> для зберігання загальної суми замовлення і присвой їй вираз розрахунку цієї суми.</li>
+        <li>Додай перевірку, чи зможе клієнт оплатити замовлення:
+            <ul>
+                <li>якщо сума до сплати перевищує кількість кредитів на рахунку клієнта, запиши у змінну <code>message</code> рядок <code>"Insufficient
+                funds!"</code>;</li>
+                <li>в іншому випадку, відніми суму покупки з рахунку клієнта і запиши у змінну <code>message</code> повідомлення: <code>"You ordered <число>
+                    droids, you have <число> credits left"</code>.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>makeTransaction(pricePerDroid, orderedQuantity, customerCredits)</code></li>
+        <li>Виклик <code>makeTransaction(3000, 5, 23000)</code> повертає <code>"You ordered 5 droids, you have 8000 credits left"</code></li>
+        <li>Виклик <code>makeTransaction(1000, 3, 15000)</code> повертає <code>"You ordered 3 droids, you have 12000 credits left"</code></li>
+        <li>Виклик <code>makeTransaction(5000, 10, 8000)</code> повертає <code>"Insufficient funds!"</code></li>
+        <li>Виклик <code>makeTransaction(2000, 8, 10000)</code> повертає <code>"Insufficient funds!"</code></li>
+        <li>Виклик <code>makeTransaction(500, 10, 5000)</code> повертає <code>"You ordered 10 droids, you have 0 credits left"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-18.js"></script>
+</body>

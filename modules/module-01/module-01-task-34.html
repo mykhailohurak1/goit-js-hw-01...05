@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 34/36</h2>
+
+    <h3>МЕТОДИ TOLOWERCASE() І TOUPPERCASE()</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Бувають ситуації, коли всі символи в рядку необхідно перетворити в один регістр, верхній або нижній. Наприклад, під час
+        пошуку за ключовим словом, коли користувач вводить рядок <code>'saMsUng'</code>, а порівняти її потрібно з рядком <code>'samsung'</code> або
+        <code>'SAMSUNG'</code>.
+    </p>
+    <code class="code">
+        console.log("saMsUng" === "samsung"); // false
+        console.log("saMsUng" === "SAMSUNG"); // false
+    </code>
+    <p>
+        Щоб не вимагати абсолютно точне введення, можна зробити «нормалізацію» введеного користувачем рядка, тобто перетворити
+        всі його символи у верхній або нижній регістр. Методи рядка <code>toLowerCase()</code> і <code>toUpperCase()</code> повернуть новий рядок у
+        відповідному регістрі, не змінюючи оригінальний.
+    </p>
+    <code class="code">
+        const BRAND_NAME = "SAMSUNG";
+        const userInput = "saMsUng";
+        const normalizedToUpperCaseInput = userInput.toUpperCase();
+        
+        console.log(userInput); // 'saMsUng'
+        console.log(userInput === BRAND_NAME); // false
+        console.log(normalizedToUpperCaseInput); // 'SAMSUNG'
+        console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
+    </code>
+
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>normalizeInput(input)</code> приймає рядок (параметр <code>input</code>) і повертає такий самий рядок, але в нижньому регістрі.
+        Присвой змінній <code>normalizedInput</code> вираз створення рядка у нижньому регістрі з параметра <code>input</code>.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>normalizeInput(input)</code></li>
+        <li>Виклик функції <code>normalizeInput("Hello world")</code> повертає <code>"hello world"</code></li>
+        <li>Виклик функції <code>normalizeInput("This ISN'T SpaM")</code> повертає <code>"this isn't spam"</code></li>
+        <li>Виклик функції <code>normalizeInput("Big SALE")</code> повертає <code>"big sale"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-34.js"></script>
+</body>

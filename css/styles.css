@@ -1,0 +1,55 @@
+code {
+    padding: 0.2em 0.4em;
+    color: rgb(47, 47, 55);
+    background-color: rgb(224, 226, 230);
+    border-radius: 5px;
+}
+
+.code {
+    display: block;
+        box-sizing: border-box;
+        background-color: rgb(22, 29, 42);
+        overflow-wrap: break-word;
+        text-rendering: optimizelegibility;
+        white-space: pre;
+        padding: 16px;
+        border-radius: 0.4rem;
+        color: rgb(240, 113, 120);
+        overflow-x: auto;
+        max-width: 40vw;
+}
+
+.healthy {
+    color: rgb(47, 47, 55);
+    padding-left: 20px;
+    position: relative;
+    margin: 0px 0px 10px;
+
+    display: block;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    background-color: rgb(235, 237, 240);;
+    padding: 16px;
+    margin: 0px 24px 16px;
+    border-radius: 0.4rem;
+    overflow-wrap: break-word;
+    text-rendering: optimizelegibility;
+}
+
+strong {
+    color: rgb(41, 41, 41);
+    font-weight: bolder;
+}
+
+.attention {
+    background-color: rgb(250, 56, 62);
+    padding: 16px;
+    margin: 0px 24px 16px;
+    border-radius: 0.4rem;
+    color: rgb(255, 255, 255);
+    overflow-wrap: break-word;
+    text-rendering: optimizelegibility;
+}

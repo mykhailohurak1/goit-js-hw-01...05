@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 09/36</h2>
+
+    <h3>ПОВЕРНЕННЯ ЗНАЧЕННЯ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Оператор <code>return</code> використовується для передачі значення з тіла функції у зовнішній код. Коли інтерпретатор зустрічає
+        <code>return</code>, він відразу ж виходить з функції (припиняє її виконання), і повертає вказане значення у те місце коду, де
+        функція була викликана.
+    </p>
+    <code class="code">
+        function multiply(x, y, z) {
+        console.log("Код до return виконується звичайним чином");
+        
+        // Повертаємо результат виразу множення
+        return x * y * z;
+        
+        console.log("Цей лог ніколи не виконається, він стоїть після return");
+        }
+        
+        // Результат роботи функції можна зберегти у змінну
+        let result = multiply(2, 3, 5);
+        console.log(result); // 30
+        
+        result = multiply(4, 8, 12);
+        console.log(result); // 384
+        
+        result = multiply(17, 6, 25);
+        console.log(result); // 2550
+    </code>
+    <p>
+        Оператор <code>return</code> без явно вказаного значення повертає спеціальне значення <code>undefined</code>. За відсутності <code>return</code> у тілі
+        функції, вона все одно поверне <code>undefined</code>.
+    </p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Доповни код функції <code>add</code> таким чином, щоб вона повертала результат додавання значень трьох параметрів: <code>a</code>, <code>b</code> і <code>c</code>.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>add(a, b, c)</code></li>
+        <li>У функції <code>add</code> є оператор <code>return</code></li>
+        <li>Виклик <code>add(15, 27, 10)</code> повертає <code>52</code></li>
+        <li>Виклик <code>add(10, 20, 30)</code> повертає <code>60</code></li>
+        <li>Виклик <code>add(5, 10, 15)</code> повертає <code>30</code></li>
+        <li>Виклик функції з випадковими, але валідними аргументами, повертає правильне значення</li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-09.js"></script>
+</body>

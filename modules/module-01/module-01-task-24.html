@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 24/36</h2>
+
+    <h3>ЗАДАЧА: ОБЧИСЛЕННЯ ЗНИЖКИ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>getDiscount(totalSpent)</code> визначає значення знижки, залежно від загальної суми витрачених грошей (параметр
+        <code>totalSpent</code>) в магазині за весь час (партнерська програма). Знижка записується у змінну <code>discount</code> і повертається з функції
+        як результат її роботи.
+    </p>
+    <p>
+        Використовуючи розгалуження і логічні оператори, доповни код функції.
+    </p>
+    <ul>
+        <li>Якщо витрачено від <code>50000</code> (включно) або більше кредитів - знижка <code>10%</code> (золотий партнер)</li>
+        <li>Якщо витрачено від <code>20000</code> (включно) до 50000 кредитів - знижка <code>5%</code> (срібний партнер)</li>
+        <li>Якщо витрачено від <code>5000</code> (включно) до 20000 кредитів - знижка <code>2%</code> (бронзовий партнер)</li>
+        <li>Якщо витрачено менше <code>5000</code> кредитів - знижка <code>0</code> (базовий партнер)</li>
+    </ul>
+    <p>
+        Значення знижок кожного рівня зберігаються в однойменних константах <code>BASE_DISCOUNT</code>, <code>BRONZE_DISCOUNT</code>, <code>SILVER_DISCOUNT</code> і
+        <code>GOLD_DISCOUNT</code>.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>getDiscount(totalSpent)</code></li>
+        <li>Виклик <code>getDiscount(137000)</code> повертає <code>0.1</code></li>
+        <li>Виклик <code>getDiscount(46900)</code> повертає <code>0.05</code></li>
+        <li>Виклик <code>getDiscount(8250)</code> повертає <code>0.02</code></li>
+        <li>Виклик <code>getDiscount(1300)</code> повертає <code>0</code></li>
+        <li>Виклик <code>getDiscount(5000)</code> повертає <code>0.02</code></li>
+        <li>Виклик <code>getDiscount(20000)</code> повертає <code>0.05</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-24.js"></script>
+</body>

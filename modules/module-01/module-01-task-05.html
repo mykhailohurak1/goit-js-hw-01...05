@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 05/36</h2>
+
+    <h3>ШАБЛОННІ РЯДКИ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+        <p>
+            Шаблонні рядки — це альтернатива конкатенації зі зручнішим синтаксисом. Шаблонний рядок береться у зворотні (скісні)
+            лапки, замість подвійних або одинарних, і може містити місцезаповнювачі, які позначаються знаком долара і фігурними
+            дужками - <code>${вираз}</code>.
+        </p>
+        <code class="code">
+            const guestName = "Mango";
+            const roomNumber = 207;
+            const greeting = `Ласкаво просимо ${guestName}, ви заселені у номер ${roomNumber}`;
+        </code>
+
+    <h4>ЗАВДАННЯ</h4>
+        <p>
+            Оголоси змінну <code>message</code> і запиши в неї повідомлення про покупку, рядок у форматі: <code>"You picked <назва товару>, price per
+            item is <ціна товару> credits"</code>. Де <code><ім'я каталогу></code> і <code><ціна товару></code> — це значення змінних <code>productName</code> і <code>pricePerItem</code>.
+            Використовуй синтаксис шаблонних рядків.
+        </p>
+
+    <h4>ТЕСТИ</h4>
+        <ul>
+            <li>Оголошена змінна <code>productName</code></li>
+            <li>Значення змінної <code>productName</code> - це рядок <code>"Droid"</code></li>
+            <li>Оголошена змінна <code>pricePerItem</code></li>
+            <li>Значення змінної <code>price</code> - це число <code>3500</code></li>
+            <li>Оголошена змінна <code>message</code></li>
+            <li>Значення змінної message - це рядок <code>"You picked Droid, price per item is 3500 credits"</code></li>
+        </ul>
+
+    <script type="module" src="../js/module-01-task-05.js"></script>
+</body>

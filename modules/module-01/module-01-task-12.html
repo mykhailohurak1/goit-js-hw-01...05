@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 12/36</h2>
+
+    <h3>ЗАДАЧА: ЗАМОВЛЕННЯ ПРОДУКТУ 2.0</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee)</code> складає і повертає повідомлення про покупку
+        ремонтних дроїдів. Вона оголошує три параметри, значення яких будуть задаватися під час її виклику.
+    </p>
+    <ul>
+        <li><code>orderedQuantity</code> - кількість дроїдів у замовленні</li>
+        <li><code>pricePerDroid</code> - ціна одного дроїда</li>
+        <li><code>deliveryFee</code> - вартість доставки</li>
+    </ul>
+    <p>
+        Доповни код функції таким чином, щоб вона повертала повідомлення про замовлення у форматі <code>"You ordered droids worth
+        <total price> credits. Delivery (<delivery fee> credits) is included in total price."</code>. 
+        Не забудь про ціну доставки в обчисленнях загальної вартості.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee)</code></li>
+        <li>Виклик <code>makeOrderMessage(2, 100, 50)</code> повертає <code>"You ordered droids worth 250 credits. Delivery (50 credits) is included in
+        total price."</code></li>
+        <li>Виклик <code>makeOrderMessage(4, 300, 100)</code> повертає <code>"You ordered droids worth 1300 credits. Delivery (100 credits) is included
+        in total price."</code></li>
+        <li>Виклик <code>makeOrderMessage(10, 70, 200)</code> повертає <code>"You ordered droids worth 900 credits. Delivery (200 credits) is included
+        in total price."</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-12.js"></script>
+</body>

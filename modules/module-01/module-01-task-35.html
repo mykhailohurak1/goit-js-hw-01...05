@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 35/36</h2>
+
+    <h3>МЕТОД INCLUDES()</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Метод рядків <code>includes(substring)</code> перевіряє, чи входить підрядок <code>substring</code> у рядок, повертає буль - <code>true</code>, якщо входить, і
+        <code>false</code> - в іншому випадку. Регістр символів в рядку і підрядку має значення, оскільки, наприклад літера <code>"a"</code> не дорівнює
+        літері <code>"А"</code>.
+    </p>
+    <code class="code">
+        const productName = "Repair droid";
+        
+        console.log(productName.includes("a")); // true
+        console.log(productName.includes("A")); // false
+        console.log(productName.includes("driod")); // true
+        console.log(productName.includes("Driod")); // false
+        console.log(productName.includes("Repair")); // true
+        console.log(productName.includes("repair")); // false
+    </code>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>checkName(fullname, name)</code> приймає два параметри та повертає буль <code>true</code> або <code>false</code> - результат перевірки входження
+        підрядка <code>name</code> у рядок <code>fullname</code>.
+    </p>
+    <ul>
+        <li><code>fullname</code> - повне ім'я, що складається з двох слів (імені та прізвища), розділених пробілом.</li>
+        <li><code>name</code> - ім'я для перевірки входження в повне ім'я.</li>
+    </ul>
+    <p>
+        Присвой змінній <code>result</code> вираз перевірки входження імені (параметр name), у повне ім'я (параметр <code>fullname</code>). Нехай функція
+        чітко розрізняє регістр літер, тобто «Петя» і «петя» - для неї різні імена.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkForName(fullname, name)</code>.</li>
+        <li>Виклик функції <code>checkForName("Egor Kolbasov", "Egor")</code> повертає <code>true</code></li>
+        <li>Виклик функції <code>checkForName("Egor Kolbasov", "egor")</code> повертає <code>false</code></li>
+        <li>Виклик функції <code>checkForName("Egor Kolbasov", "egOr")</code> повертає <code>false</code></li>
+        <li>Виклик функції <code>checkForName("Egor Kolbasov", "Zhenya")</code> повертає <code>false</code></li>
+        <li>Виклик функції <code>checkForName("Vadim Nekrasov", "Vadim")</code> повертає <code>true</code></li>
+        <li>Виклик функції <code>checkForName("Vadim Nekrasov", "vadim")</code> повертає <code>false</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-35.js"></script>
+</body>

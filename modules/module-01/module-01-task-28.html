@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 28/36</h2>
+
+    <h3>ІНСТРУКЦІЯ <code>SWITCH</code> З БЛОКОМ <code>DEFAULT</code></h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Якщо жодного збігу значень не відбулося, необхідно виконати код за замовчуванням, як у блоці <code>else</code> для інструкції
+        <code>if...else</code>. Для цього, після всіх блоків <code>case</code> додається блок <code>default</code>.
+    </p>
+    <code class="code">
+        switch (значення) {
+        case значення:
+        інструкції;
+        break;
+        
+        case значення:
+        інструкції;
+        break;
+        
+        default:
+        інструкції;
+        }
+    </code>
+    <p>
+        Оператор <code>break</code> після блоку <code>default</code> не потрібен, оскільки це і так останнє, що буде виконано в <code>switch</code> і управління буде
+        передане коду після нього.
+    </p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>checkPassword(password)</code> отримує пароль в параметр <code>password</code>, перевіряє його на збіг з паролем адміністратора у
+        змінній <code>ADMIN_PASSWORD</code> і повертає повідомлення про результат порівняння, яке зберігається у змінній <code>message</code>.
+    </p>
+    <p>
+        Якщо значення параметра <code>password</code>:
+    </p>
+    <ul>
+        <li>дорівнює <code>null</code>, значить користувач скасував операцію і в <code>message</code> записується рядок <code>"Canceled by user!"</code>.</li>
+        <li>збігається зі значенням <code>ADMIN_PASSWORD</code>, у змінну message присвоюється рядок <code>"Welcome!"</code>.</li>
+        <li>не задовольняє жодну з попередніх умов, у змінну <code>message</code> записується рядок <code>"Access denied, wrong password!"</code>.</li>
+    </ul>
+    <p>
+        Зроби рефакторинг коду, замінивши інструкцію <code>if..else</code> на <code>switch</code>, і не забудь про блок <code>default</code> (аналог <code>else</code>).
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkPassword(password)</code></li>
+        <li>Виклик <code>checkPassword("mangohackzor")</code> повертає <code>"Access denied, wrong password!"</code></li>
+        <li>Виклик <code>checkPassword(null)</code> повертає <code>"Canceled by user!"</code></li>
+        <li>Виклик <code>checkPassword("polyhax")</code> повертає <code>"Access denied, wrong password!"</code></li>
+        <li>Виклик <code>checkPassword("jqueryismyjam")</code> повертає <code>"Welcome!"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-28.js"></script>
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 13/36</h2>
+
+    <h3>ОПЕРАТОРИ ПОРІВНЯННЯ <code>></code>, <code>>=</code>, <code><</code> І <code><=</code></h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>Використовується для порівняння двох значень. Результатом свого виконання повертають буль - <code>true</code> або <code>false</code>, тобто «так»
+    або «ні».</p>
+    <ul>
+        <li><code>></code> - більше</li>
+        <li><code><</code> - менше</li>
+        <li><code>>=</code> - більше або дорівнює</li>
+        <li><code><=</code> - менше або дорівнює</li>
+    </ul>
+    <code class="code">
+        const a = 2;
+        const b = 5;
+        
+        console.log(a > b); // false
+        console.log(b > a); // true
+        console.log(a >= b); // false
+        console.log(b >= a); // true
+        
+        console.log(a < b); // true console.log(b < a); // false console.log(a <=b); // true console.log(b <=a); // false
+    </code>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>isAdult</code> оголошує один параметр age (вік), значення якого буде задаватися під час її виклику. Присвой змінній
+        passed вираз перевірки віку користувача на повноліття. Людина вважається повнолітньою у віці 18 років і старше.
+    </p>
+    
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>isAdult(age)</code></li>
+        <li>У виразі перевірки використовується оператор <code>>=</code></li>
+        <li>Виклик <code>isAdult(20)</code> повертає <code>true</code></li>
+        <li>Виклик <code>isAdult(14)</code> повертає <code>false</code></li>
+        <li>Виклик <code>isAdult(8)</code> повертає <code>false</code></li>
+        <li>Виклик <code>isAdult(37)</code> повертає <code>true</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-13.js"></script>
+</body>

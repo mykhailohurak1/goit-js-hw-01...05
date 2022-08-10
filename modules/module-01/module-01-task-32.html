@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 32/36</h2>
+
+    <h3>МЕТОД SLICE()</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Метод рядків <code>slice(startIndex, endIndex)</code> використовується для створення копії частини або всього рядка. Він робить копію
+        елементів рядка від <code>startIndex</code> і до, але не включно <code>endIndex</code>, і повертає новий рядок.
+    </p>
+    <code class="code">
+        const productName = "Repair droid";
+        console.log(productName.slice(0, 4)); // "Repa"
+        console.log(productName.slice(3, 9)); // "air dr"
+        console.log(productName.slice(0, productName.length)); // "Repair droid"
+        console.log(productName.slice(7, productName.length)); // "droid"
+    </code>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>getSubstring(string, length)</code> приймає рядок і повертає підрядок від початку і до <code>length</code> символів. Вона оголошує
+        два параметри, значення яких будуть задаватися під час її виклику:
+    </p>
+    <ul>
+        <li><code>string</code> - оригінальний рядок</li>
+        <li><code>length</code> - кількість символів з початку рядка для підрядка</li>
+    </ul>
+    <p>
+        Присвой змінній <code>substring</code> вираз створення підрядка довжиною <code>length</code> символів (від початку) з рядка <code>string</code>.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>getSubstring(string, length)</code></li>
+        <li>Виклик функції <code>getSubstring("Hello world", 3)</code> повертає <code>"Hel"</code></li>
+        <li>Виклик функції <code>getSubstring("Hello world", 6)</code> повертає <code>"Hello"</code></li>
+        <li>Виклик функції <code>getSubstring("Hello world", 8)</code> повертає <code>"Hello wo"</code></li>
+        <li>Виклик функції <code>getSubstring("Hello world", 11)</code> повертає <code>"Hello world"</code></li>
+        <li>Виклик функції <code>getSubstring("Hello world", 0)</code> повертає <code>""</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-32.js"></script>
+</body>

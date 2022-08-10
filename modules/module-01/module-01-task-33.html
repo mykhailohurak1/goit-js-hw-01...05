@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 33/36</h2>
+
+    <h3>ЗАДАЧА: ФОРМАТУВАННЯ ПОВІДОМЛЕННЯ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>formatMessage(message, maxLength)</code> приймає рядок (параметр <code>message</code>) і форматує його, якщо довжина перевищує
+        значення в параметрі <code>maxLength</code>.
+    </p>
+    <p>
+        Доповни код функції таким чином, що якщо довжина рядка:
+    </p>
+    <ul>
+        <li>не перевищує <code>maxLength</code>, функція повертає його в початковому вигляді.</li>
+        <li>більша за <code>maxLength</code>, то функція обрізає рядок до <code>maxLength</code> символів і додає в кінець три крапки <code>"..."</code>, після чого
+        повертає скорочену версію.</li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>formatMessage(message, maxLength)</code></li>
+        <li>Виклик функції <code>formatMessage("Curabitur ligula sapien", 16)</code> повертає <code>"Curabitur ligula..."</code></li>
+        <li>Виклик функції <code>formatMessage("Curabitur ligula sapien", 23)</code> повертає <code>"Curabitur ligula sapien"</code></li>
+        <li>Виклик функції <code>formatMessage("Vestibulum facilisis purus nec", 20)</code> повертає <code>"Vestibulum facilisis..."</code></li>
+        <li>Виклик функції <code>formatMessage("Vestibulum facilisis purus nec", 30)</code> повертає <code>"Vestibulum facilisis purus nec"</code></li>
+        <li>Виклик функції <code>formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)</code> повертає <code>"Nunc sed turpis..."</code></li>
+        <li>Виклик функції <code>formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)</code> повертає <code>"Nunc sed turpis a felis in nunc
+        fringilla"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-33.js"></script>
+</body>

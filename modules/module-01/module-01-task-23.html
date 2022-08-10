@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 23/36</h2>
+
+    <h3>ЛОГІЧНЕ «НЕ» (ОПЕРАТОР <code>!</code>)</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Всі оператори, які ми розглядали до цього, були <strong>бінарними</strong>. Тобто вони містили два операнди: лівий і правий. Логічне «НЕ»
+        - це <strong>унарний</strong> оператор, що виконує операцію над одним операндом справа.
+    </p>
+    <code class="code">
+        !вираз
+    </code>
+    <p>
+        Оператор <code>!</code> приводить операнд до буля, якщо необхідно, а потім робить інверсію - замінює його на протилежний <code>true -> false</code> або <code>false -> true</code>.
+    </p>
+    <code class="code">
+        console.log(!true); // false
+        console.log(!false); // true
+        console.log(!3); // !3 -> !true -> false
+        console.log(!"Mango"); // !'Mango' -> !true -> false
+        console.log(!0); // !0 -> !false -> true
+        console.log(!""); // !'' -> !false -> true
+        
+        const isOnline = true;
+        const isNotOnline = !isOnline; // !isOnline -> !true -> false
+    </code>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>isNumberNotInRange(start, end, number)</code> перевіряє, чи не входить число у проміжок. Тобто число повинно бути
+        меншим або дорівнювати <code>start</code> і більшим або дорівнювати <code>end</code>. Результатом виразу перевірки буде буль <code>true</code> або <code>false</code>.
+    </p>
+    <p>
+        Вона оголошує три параметри, значення яких будуть задаватися під час її виклику:
+    </p>
+    <ul>
+        <li><code>number</code> - число, невходження якого перевіряється</li>
+        <li><code>start</code> - початок числового проміжку</li>
+        <li><code>end</code> - кінець числового проміжку</li>
+    </ul>
+    <p>
+        Присвой змінній <code>isNotInRange</code> вираз інверсії значення змінної <code>isInRange</code>, використовуючи оператор <code>!</code>.
+    </p>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>isNumberNotInRange(start, end, number)</code></li>
+        <li>У виразі використаний оператор <code>!</code></li>
+        <li>Виклик <code>isNumberNotInRange(10, 30, 17)</code> повертає <code>false</code></li>
+        <li>Виклик <code>isNumberNotInRange(10, 30, 5)</code> повертає <code>true</code></li>
+        <li>Виклик <code>isNumberNotInRange(20, 50, 24)</code> повертає <code>false</code></li>
+        <li>Виклик <code>isNumberNotInRange(20, 50, 76)</code> повертає <code>true</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-23.js"></script>
+</body>

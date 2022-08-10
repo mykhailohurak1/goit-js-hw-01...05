@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 21/36</h2>
+
+    <h3>ЛОГІЧНЕ «І» (ОПЕРАТОР <code>&&</code>)</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Логічні оператори використовуються для перевірки умов з багатьма виразами, наприклад у розгалуженнях.
+    </p>
+    <p>
+        Оператор <code>&&</code> приводить всі операнди до буля і повертає значення одного з них. Лівий операнд, якщо його можна привести до
+        <code>false</code>, і правий - в інших випадках.
+    </p>
+    <code class="code">
+        вираз && вираз
+    </code>
+    <p>
+        У наступному прикладі обидві умови повернуть <code>true</code>, тому результатом всього виразу буде <code>true</code> - повернеться значення
+        правого операнда.
+    </p>
+    <code class="code">
+        const age = 20;
+        console.log(age > 10 && age < 30); // true && true -> true
+    </code>
+    <p>
+        Якщо хоча б один з операндів буде приведений до <code>false</code>, результатом виразу буде цей операнд.
+    </p>
+    <code class="code">
+        const age = 50;
+        console.log(age > 10 && age < 30); // true && false -> false
+            console.log(age > 80 && age < 120); // false && true -> false
+    </code>
+    <p>
+        Тобто логічне «І» запинається на хибності і повертає те, на чому запнувся або останній операнд.
+    </p>
+    <code class="code">
+        console.log(true && false); // false
+        console.log(false && true); // false
+        console.log(true && true); // true
+        
+        console.log(3 && false); // false
+        console.log(false && 3); // false
+        console.log(3 && true); // true
+        console.log(true && 3); // 3
+    </code>
+    <div class="healthy">
+        <h5>Корисно</h5>
+        <p>
+            Запам'ятайте шість значень, які в булевому перетворенні приводяться до `false`: `0`, `NaN`, `null`, `undefined`,
+            порожній рядок `""` або `''` і саме значення `false`. Абсолютно все інше приводиться до `true`.
+        </p>
+    </div>
+
+    <code class="code">
+        console.log(1 && 5); // true && true -> 5
+        console.log(5 && 1); // true && true -> 1
+        console.log(0 && 2); // false && true -> 0
+        console.log(2 && 0); // true && false -> 0
+        console.log("" && "Mango"); // false && true -> ''
+        console.log("Mango" && ""); // true && false -> ''
+        console.log("Mango" && "Poly"); // true && true -> 'Poly'
+        console.log("Poly" && "Mango"); // true && true -> 'Mango'
+    </code>
+    
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>isNumberInRange(start, end, number)</code> перевіряє, чи входить число у проміжок. Вона оголошує три параметри,
+        значення яких будуть задаватися під час її виклику:
+    </p>
+    <ul>
+        <li><code>number</code> - число, входження якого перевіряється</li>
+        <li><code>start</code> - початок числового проміжку</li>
+        <li><code>end</code> - кінець числового проміжку</li>
+    </ul>
+    <p>
+        Присвой змінній <code>isInRange</code> вираз перевірки входження number у числовий проміжок від <code>start</code> до <code>end</code>. Тобто число повинно
+        бути більшим або дорівнювати <code>start</code>, і меншим або дорівнювати <code>end</code>. Результатом виразу перевірки буде буль <code>true</code> або <code>false</code>.
+    </p>
+    
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>isNumberInRange(start, end, number)</code></li>
+        <li>У виразі перевірки використаний оператор <code>&&</code></li>
+        <li>Виклик <code>isNumberInRange(10, 30, 17)</code> повертає <code>true</code></li>
+        <li>Виклик <code>isNumberInRange(10, 30, 5)</code> повертає <code>false</code></li>
+        <li>Виклик <code>isNumberInRange(20, 50, 24)</code> повертає <code>true</code></li>
+        <li>Виклик <code>isNumberInRange(20, 50, 76)</code> повертає <code>false</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-21.js"></script>
+</body>

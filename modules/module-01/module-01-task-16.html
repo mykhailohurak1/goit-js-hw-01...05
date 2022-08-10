@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 16/36</h2>
+
+    <h3>ЗАДАЧА: СКЛАД ТОВАРІВ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+    
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>checkStorage(available, ordered)</code> перевіряє можливість оформлення замовлення і повертає повідомлення про
+        результат. Вона оголошує два параметри, значення яких будуть задаватися під час її виклику:
+    </p>
+    <ul>
+        <li><code>available</code> - загальна кількість товарів на складі</li>
+        <li><code>ordered</code> - одиниць товару в замовленні</li>
+    </ul>
+    <p>
+        Використовуючи розгалуження, доповни код функції таким чином, що:
+    </p>
+    <ul>
+        <li>Якщо в замовленні вказане число, яке перевищує кількість товарів на складі, у змінну <code>message</code> записується рядок <code>"Not
+        enough goods in stock!"</code>.</li>
+        <li>В іншому випадку записується рядок <code>"Order is processed, our manager will contact you."</code>.</li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkStorage(available, ordered)</code>.</li>
+        <li>Виклик <code>checkStorage(100, 50)</code> повертає <code>"Order is processed, our manager will contact you."</code></li>
+        <li>Виклик <code>checkStorage(100, 130)</code> повертає <code>"Not enough goods in stock!"</code></li>
+        <li>Виклик <code>checkStorage(200, 20)</code> повертає <code>"Order is processed, our manager will contact you."</code></li>
+        <li>Виклик <code>checkStorage(200, 150)</code> повертає <code>"Order is processed, our manager will contact you."</code></li>
+        <li>Виклик <code>checkStorage(150, 180)</code> повертає <code>"Not enough goods in stock!"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-16.js"></script>
+</body>

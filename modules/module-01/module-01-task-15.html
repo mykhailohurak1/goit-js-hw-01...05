@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 15/36</h2>
+
+    <h3>ІНСТРУКЦІЯ <code>IF...ELSE</code></h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Розгалуження використовуються для виконання різного коду, залежно від умови. Принцип роботи простий - результат виразу в
+        умові блоку <code>if</code> приводиться до буля <code>true</code> або <code>false</code>.
+    </p>
+    <code class="code">
+        if (умова) {
+        // тіло if
+        } else {
+        // тіло else
+        }
+    </code>
+    <p>
+        Якщо умова приводиться до <code>true</code>, то виконується код у фігурних дужках тіла <code>if</code>, а блок <code>else</code> ігнорується.
+    </p>
+    <code class="code">
+        let cost;
+        const subscription = "pro";
+        
+        if (subscription === "pro") {
+        cost = 100;
+        } else {
+        cost = 0;
+        }
+        
+        console.log(cost); // 100
+    </code>
+    <p>
+        Якщо умова приводиться до <code>false</code>, код блоку <code>if</code> буде пропущений, і виконається код у фігурних дужках після блоку <code>else</code>.
+    </p>
+    <code class="code">
+        let cost;
+        const subscription = "free";
+        
+        if (subscription === "pro") {
+        cost = 100;
+        } else {
+        cost = 0;
+        }
+        
+        console.log(cost); // 0
+    </code>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Додай вираз перевірки повноліття користувача, значення параметра <code>age</code>, в умову для інструкції <code>if</code>.
+    </p>
+    <ul>
+        <li>Якщо користувач повнолітній, повинен виконуватися блок <code>if</code> і у змінну <code>message</code> записується рядок <code>"You are an adult"</code>.</li>
+        <li>В іншому випадку повинен виконуватися блок <code>else</code> і записується рядок <code>"You are a minor"</code>.</li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkAge(age)</code>.</li>
+        <li>У виразі перевірки віку використаний оператор <code>>=</code></li>
+        <li>Виклик <code>checkAge(20)</code> повертає <code>"You are an adult"</code></li>
+        <li>Виклик <code>checkAge(8)</code> повертає <code>"You are a minor"</code></li>
+        <li>Виклик <code>checkAge(14)</code> повертає <code>"You are a minor"</code></li>
+        <li>Виклик <code>checkAge(38)</code> повертає <code>"You are an adult"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-15.js"></script>
+</body>

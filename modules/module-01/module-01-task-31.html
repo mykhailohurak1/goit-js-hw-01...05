@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 31/36</h2>
+
+    <h3>ІНДЕКСАЦІЯ ЕЛЕМЕНТІВ РЯДКА</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>
+        Рядок — це індексований набір з нуля або більше символів, взятих в одинарні, подвійні або скісні лапки.
+    </p>
+    <p>
+        Індексація елементів рядка починається з нуля. Наприклад, в рядку <code>'JavaScript'</code> літера <code>'J'</code> стоїть на позиції з індексом
+        <code>0</code>, а <code>'t'</code> - під індексом <code>9</code>. При цьому довжина рядка <code>'JavaScript'</code> дорівнює <code>10</code>, тобто індекс останнього елемента завжди на
+        одиницю менший його довжини.
+    </p>
+    <p>
+        Для доступу до значення елемента рядка використовується синтаксис квадратних дужок <code>рядок[індекс]</code>.
+    </p>
+    <code class="code">
+        const productName = "Repair droid";
+        console.log(productName[0]); // "R"
+        console.log(productName[5]); // "r"
+        console.log(productName[11]); // "d"
+        console.log(productName[productName.length - 1]); // "d"
+    </code>
+    <p>
+        Вміст рядка не можна змінити, лише прочитати. Тобто не можна взяти якийсь символ і замінити його, щойно рядок створений
+        - він такий назавжди. Можна лише створити повністю новий рядок і присвоїти у змінну, замість старого.
+    </p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Доповни код, присвоївши оголошеним змінним вирази звертання до відповідних елементів або властивостей рядка у змінній
+        <code>course</code>.
+    </p>
+    <ul>
+        <li><code>courseTopicLength</code> - довжина рядка.</li>
+        <li><code>firstElement</code> - перший символ рядка.</li>
+        <li><code>lastElement</code> - останній символ рядка.</li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена змінна <code>courseTopic</code></li>
+        <li>Значення змінної <code>courseTopic</code> - це рядок <code>"JavaScript essentials"</code></li>
+        <li>Оголошена змінна <code>courseTopicLength</code></li>
+        <li>Значення змінної <code>courseTopicLength</code> - це число <code>21</code></li>
+        <li>Оголошена змінна <code>firstElement</code></li>
+        <li>Значення змінної <code>firstElement</code> - це рядок <code>"J"</code></li>
+        <li>Оголошена змінна <code>lastElement</code></li>
+        <li>Значення змінної <code>lastElement</code> - це рядок <code>"s"</code></li>
+    </ul>
+
+    <script type="module" src="../js/module-01-task-31.js"></script>
+</body>

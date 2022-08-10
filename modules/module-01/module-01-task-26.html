@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <p><a href="../../index.html">Повернутись на головну сторінку</a></p>
+    <p><a href="../../module-01.html">Повернутись в Модуль 1</a></p>
+
+    <h2>Модуль 1 - Завдання 26/36</h2>
+
+    <h3>ЗАДАЧА: ПЕРЕВІРКА ПАРОЛЯ</h3>
+
+    <h4>ТЕОРІЯ</h4>
+    <p>---</p>
+
+    <h4>ЗАВДАННЯ</h4>
+    <p>
+        Функція <code>checkPassword(password)</code> порівнює переданий їй пароль (параметр <code>password</code>) зі збереженим паролем адміністратора
+        (константа <code>ADMIN_PASSWORD</code>) і повертає рядок з повідомленням про результат.
+    </p>
+    <p>
+        Використовуючи тернарний оператор, доповни функцію таким чином, що:
+    </p>
+    <ul>
+        <li>Якщо значення <code>password</code> і <code>ADMIN_PASSWORD</code> збігаються, присвой змінній <code>message</code> рядок <code>"Access is allowed"</code>.</li>
+        <li>В іншому випадку, присвой <code>message</code> рядок <code>"Access denied, wrong password!"</code>.</li>
+    </ul>
+
+    <h4>ТЕСТИ</h4>
+    <ul>
+        <li>Оголошена функція <code>checkPassword(password)</code></li>
+        <li>Використаний тернарний оператор</li>
+        <li>Виклик <code>checkPassword("jqueryismyjam")</code> повертає <code>"Access is allowed"</code></li>
+        <li>Виклик <code>checkPassword("angul4r1sl1f3")</code> повертає <code>"Access denied, wrong password!"</code></li>
+        <li>Виклик <code>checkPassword("r3actsux")</code> повертає <code>"Access denied, wrong password!"</code></li>
+    </ul>
+    
+    <script type="module" src="../js/module-01-task-26.js"></script>
+</body>
